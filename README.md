@@ -13,7 +13,7 @@ Dalam proyek kali ini, terdapat penggunaan stateless widget dan stateful widget.
 
 Apa fungsi dari setState()? Jelaskan variabel apa saja yang dapat terdampak dengan fungsi tersebut.
 
-Pemanggilan setState() berfungsi untuk memerintahkan framework untuk melakukan rebuild saat adanya perubahan yang berdampak pada user interface. setState() akan berdampak pada stateful widget.
+Pemanggilan setState() berfungsi untuk memerintahkan framework untuk melakukan rebuild saat adanya perubahan yang berdampak pada user interface. setState() akan berdampak pada stateful widget. Variabel yang terdampak pada proyek ini adalah _counter
 
 Jelaskan perbedaan antara const dengan final.
 
