@@ -1,3 +1,6 @@
+Nama: Thalia Fortuna
+NPM : 2106751890
+
 Jelaskan apa yang dimaksud dengan stateless widget dan stateful widget dan jelaskan perbedaan dari keduanya.
 
 Stateless widget adalah widget yang tidak dapat diubah atau tidak akan pernah diubah, sedangkan stateful widget adalah widget yang bersifat dinamis atau dapat berubah. Stateful widget yang bersifat dinamis, dapat digunakan untuk meng-update tampilan seperti warna, kolom, dll. Perbedaan lainnya antara kedua jenis widget tersebut adalah penggunaan setState(). Fungsi setState() hanya dapat digunakan pada stateful widget, tidak dapat digunakan di stateless widget. 
