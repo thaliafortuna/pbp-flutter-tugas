@@ -1,4 +1,5 @@
 Nama: Thalia Fortuna
+
 NPM : 2106751890
 
 Jelaskan apa yang dimaksud dengan stateless widget dan stateful widget dan jelaskan perbedaan dari keduanya.
