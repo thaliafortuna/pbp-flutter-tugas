@@ -127,7 +127,7 @@ class _MyFormPageState extends State<MyFormPage> {
                                         borderRadius: BorderRadius.circular(5.0),
                                     ),
                                 ),
-                                // Menambahkan behavior saat nama diketik 
+                                // Menambahkan behavior saat nominal diketik 
                                 onChanged: (String? value) {
                                     setState(() {
                                         nominal = int.parse(value!);
