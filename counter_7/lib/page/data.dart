@@ -1,7 +1,8 @@
 // ignore_for_file: prefer_const_constructors
 import 'package:flutter/material.dart';
-import 'package:counter_7/form.dart';
+import 'package:counter_7/page/form.dart';
 import 'package:counter_7/main.dart';
+import 'package:counter_7/page/form_mywatchlist.dart';
 
 class MyDataPage extends StatefulWidget {
   const MyDataPage({super.key});
@@ -55,6 +56,16 @@ class _MyDataPageState extends State<MyDataPage> {
                   context,
                   MaterialPageRoute(builder: (context) => const MyDataPage()),
                 );
+              },
+            ),
+            ListTile(
+              title: const Text('My Watch List'),
+              onTap: () {
+                  // Route menu ke halaman form_data
+                  Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(builder: (context) => const MyWatchlistPage()),
+                  );
               },
             ),
           ],

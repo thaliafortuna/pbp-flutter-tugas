@@ -1,7 +1,8 @@
 // ignore_for_file: prefer_const_constructors
 import 'package:flutter/material.dart';
 import 'package:counter_7/main.dart';
-import 'package:counter_7/data.dart';
+import 'package:counter_7/page/data.dart';
+import 'package:counter_7/page/form_mywatchlist.dart';
 
 class Data{
   static List<String> listJudul = [];
@@ -62,6 +63,16 @@ class _MyFormPageState extends State<MyFormPage> {
                           context,
                           MaterialPageRoute(builder: (context) => const MyDataPage()),
                         );
+                      },
+                    ),
+                    ListTile(
+                      title: const Text('My Watch List'),
+                      onTap: () {
+                          // Route menu ke halaman form_data
+                          Navigator.pushReplacement(
+                          context,
+                          MaterialPageRoute(builder: (context) => const MyWatchlistPage()),
+                          );
                       },
                     ),
                   ],
