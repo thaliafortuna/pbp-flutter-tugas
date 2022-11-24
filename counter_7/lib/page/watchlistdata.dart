@@ -74,7 +74,7 @@ class _MyWatchListDetailsPageState extends State<MyWatchListDetailsPage> {
       body: Column(children: [
         Text(Details.fetcher.title),
         Text('Release Date : ' + Details.fetcher.releaseDate),
-        Text('Rating : ' + Details.fetcher.rating.toString()),
+        Text('Rating : ' + Details.fetcher.rating),
         Text('Status : ' + Details.getStatus()),
         Text('Review : ' + Details.fetcher.review),
         const Spacer(),

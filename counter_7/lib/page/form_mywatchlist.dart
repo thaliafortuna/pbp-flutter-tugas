@@ -25,6 +25,7 @@ class MyWatchlistPageState extends State<MyWatchlistPage> {
         "Access-Control-Allow-Origin": "*",
         "Content-Type": "application/json",
 
+
       },
     );
 
@@ -135,7 +136,7 @@ class MyWatchlistPageState extends State<MyWatchlistPage> {
                             Text(
                               "${snapshot.data![index].fields.title}",
                               style: const TextStyle(
-                                fontSize: 18.0,
+                                fontSize: 30,
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
