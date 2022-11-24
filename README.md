@@ -55,3 +55,22 @@ Sebelumnya, akan dibuat halaman form.dart dan data.dart sebagai tambahan navigas
 Selanjutnya adalah modifikasi pada halaman form.dart. Ditambahkan variabel String bernama judul, variabel int bernama nominal, variabel String bernama jenisPilihan, dan List berisi String yang bernama jenisBudget. Lalu pada body, akan dibuat Form dimana terdapat input judul, nominal, serta dropdown jenis budget. Input judul dan nominal menggunakan event onChanged untuk menambahkan behavior saat data diketik serta onSaved untuk menambah behavior saat data disimpan. Juga ditambahkan validator untuk memastikan input judul dan nominal tidak kosong. Selanjutnya pada form, akan ditambahkan menu DropdownButton untuk memilih jenis budget, dimana default value adalah pengeluaran, namun dapat diganti menjadi pemasukan. Dropdown ini memiliki event onChanged yang akan mengubah value menjadi pilihan yang diganti (pemasukan/pengeluaran). Selanjutnya, terdapat button "Simpan" yang akan menyimpan seluruh value dari data yang telah dimasukkan. TextButton ini juga memiliki event onPressed dimana akan dilakukan append judul ke dalam listJudul, nominal ke dalam listNominal, dan jenisPilihan ke dalam listJenis. Selanjutnya, akan dimunculkan popup jika data berhasil ditambahkan. 
 
 Untuk menyimpan seluruh data user input, saya menambahkan class bernama Data dimana diinisiasikan tiga buah class bernama listJudul, listNominal, dan listJenis yang akan menampung data-data sesuai user input. Ketiga list ini juga akan digunakan di data.dart alias halaman ketiga. Data.dart juga akan menginisiasi variabel listJudul, listNominalm dan listJenis yang akan di-import dari form.dart. Dengan itu, maka akan ditampilkan Text berupa keseluruhan user input dengan loop sebanyak size dari salah satu list. Hal ini dilakukan dengan menjalankan listJudul[index], listNominal[index].toString(), dan listJenis[index].
+
+
+
+# Tugas 9
+Apakah bisa kita melakukan pengambilan data JSON tanpa membuat model terlebih dahulu? Jika iya, apakah hal tersebut lebih baik daripada membuat model sebelum melakukan pengambilan data JSON?
+
+Bisa. Model itu mempermudah untuk menghindari penggunaan list multidimensi.
+
+Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
+
+Terdapat penggunaan stateless widget dan stateful widget. Widget yang digunakan antara lain: Text widget, button widget, navigator widget, dan form widget (memuat TextFormField dan DropdownButton). Text widget berfungsi untuk membuat text. Button widget berfungsi untuk membuat button yang memodifikasi halaman data.dart dari user input. Navigator widget berfungsi untuk menampilkan layar sebagai sebuah stack atau tumpukan. Form widget bertujuan sebagai wadah bagi berbagai input field widget. Beberapa widget yang digunakan dalam form adalah TextFormField untuk menerima user input String dan DropdownButton untuk menyediakan pilihan yang dapat dipilih oleh user.
+
+Jelaskan mekanisme pengambilan data dari json hingga dapat ditampilkan pada Flutter.
+
+Pertama-tama, digunakan Quicktype  dengan sourcetype JSON dan language Dart. Data JSON itulah yang akan ditampilkan nantinya. Lalu, dilanjutkan dengan menambahkan package tambahan yaitu package http. Lalu diberikan permission untuk akses internet mellaui folder android. Untuk menampilkan dat dari web service, menggunakan json decode dijadikan object dari model yang telah dibuat. 
+
+Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
+
+Membuat folder model dan page. Lalu dilanjutkan dengan membuat file model. Lalu, lakukan fetch data dari webservice dengan menambahkan dulu dependency http ke proyek. Digunakan web Quicktype dengan source type JSON language dartt. Data JSON dipindahkan ke file model. Saya menjalankan flutter pub add http untuk menambahkan package http dan menambahkan permission untuk melakukan fetch data dengan internet. Melalui file form_mywatchlist.dart saya melakukan penambahan drawer untuk watchlist. Pada file ini, akan ditunjukkan data JSON yang telah diolah tadi. Lalu, melalui file watchlistdata.dart akan ditunjukkan detail.
